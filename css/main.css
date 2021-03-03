@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  list-style: none;
+}
+
+body {
+  background-color: #333;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 1rem;
+  background-color: #84AAA2;
+}
+
+nav ul {
+  display: flex;
+  height: 100%;
+}
+
+
+nav ul li a {
+  padding: 1.2rem;
+  display: block;
+  position: relative;
+}
+
+nav ul li a:hover {
+  background-color: #f4f4f4;
+  color: #84AAA2;
+}
+
+.active {
+  background-color: #f4f4f4;
+  color: #84AAA2;
+}
+
+nav .fab {
+  font-size: 3rem;
+}
+
+nav .fab:hover {
+  color: #13ac88;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  position: relative;
+
+  height: 720px;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/main-img.jpeg");
+  background-size: cover;
+  filter: blur(5px);
+}
+
+.hero-inside {
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 7rem;
+  font-weight: normal;
+
+}
+
+.hero p {
+  font-size: 2rem;
+}
+
+main {
+  display: flex;
+}
