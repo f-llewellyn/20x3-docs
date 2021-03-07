@@ -180,6 +180,34 @@ article h2 {
   justify-content: space-evenly;
 }
 
+.docs-info-box {
+  display: block;
+}
+
+.docs-info-box h2 {
+  margin-bottom: 1rem;
+}
+
+.docs-list {
+  counter-reset: counter;
+}
+
+.docs-list li {
+  counter-increment: counter;
+  padding: 0.5rem;
+}
+
+.docs-list li::before {
+  content: counter(counter) ". ";
+  color: #84AAA2;
+  font-weight: bold;
+}
+
+.docs-list p {
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
 button{
   border: none;
   padding: 1rem;
