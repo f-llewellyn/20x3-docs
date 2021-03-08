@@ -182,6 +182,7 @@ article h2 {
 
 .docs-info-box {
   display: block;
+  margin: 2rem;
 }
 
 .docs-info-box h2 {
